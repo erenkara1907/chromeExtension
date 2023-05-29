@@ -1,0 +1,28 @@
+{
+  "name": "Chromextension",
+  "description": "A Flutter chrome extension",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' ; object-src 'self'"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["contextMenus", "clipboardWrite", "clipboardRead"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "assets/icons/chromextension16.png",
+      "32": "assets/icons/chromextension32.png",
+      "48": "assets/icons/chromextension48.png",
+      "128": "assets/icons/chromextension128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/chromextension16.png",
+    "32": "assets/icons/chromextension32.png",
+    "48": "assets/assets/icons/chromextension48.png",
+    "128": "assets/icons/chromextension128.png"
+  }
+}
